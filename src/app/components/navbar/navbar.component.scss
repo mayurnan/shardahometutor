@@ -1,0 +1,25 @@
+.nav-wrapper {
+    z-index: 9999; 
+ }
+img
+ {  
+    height:auto;
+    width:80px;
+    object-fit: cover;
+    margin: 5px;
+ }
+ nav
+ {
+   color: black;
+   background-color: blue;
+}
+li a{
+   color: black;
+}
+a i {
+   color: black;
+}
+.container
+{
+    width:85vw;
+}
