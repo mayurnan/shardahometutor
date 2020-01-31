@@ -8,7 +8,9 @@ import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { RegistrationComponent } from './components/registration/registration.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { GridComponent } from './components/grid/grid.component'
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { FormsModule } from '@angular/forms'
     FooterComponent,
     AboutusComponent,
     RegistrationComponent,
-    NavbarComponent
+    NavbarComponent,
+    CarouselComponent,
+    GridComponent
   ],
   imports: [
     BrowserModule,

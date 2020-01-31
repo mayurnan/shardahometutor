@@ -17,7 +17,7 @@ export class RegistrationComponent implements OnInit {
   Courses : Course[] = courses ;
   Subjects : Subject[] = subjects;
   instance;//instance for select
-  FormModel = new Registration('','',undefined,[],[],'','',)
+  FormModel = new Registration('','',undefined,'',[],'','','')
   responseMsg:string='';
   show_success:Boolean=false;
   show_error:Boolean=false;
@@ -67,12 +67,12 @@ export class RegistrationComponent implements OnInit {
       console.log("formModel is " , this.FormModel)
       // const result = await service.SubmitFrom(this.FormModel)
       
-      this.FormModel = {username: '' ,email:'', phone: undefined, course:[], subject:[] , location:'', message:''}
+      this.FormModel = {username: '' ,email:'', phone: undefined, course:[], subject:'' , location:'', std: '',message:''}
       // this.responseMsg ="Form Submited Successfully"
       this.show_success=true
     }
     catch(error){
-      this.FormModel = {username: '' ,email:'', phone: undefined, course:[], subject:[] , location:'', message:''}
+      this.FormModel = {username: '' ,email:'', phone: undefined, course:[], subject:'' , location:'', std:'', message:''}
       this.show_error=true
     }
     setTimeout(()=>
