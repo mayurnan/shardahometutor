@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 // import {Sidenav} from 'materialize-css';
-import * as M from 'materialize-css';
+import {Sidenav} from 'materialize-css';
 
 import {baseurl} from '../../../shared/BaseURL'
 
@@ -16,7 +16,7 @@ export class NavbarComponent implements OnInit {
 
 
   ngAfterViewInit(): void {
-    M.Sidenav.init(document.querySelector('.sidenav'));
+    Sidenav.init(document.querySelector('.sidenav'));
   }
 
   ngOnInit() {
