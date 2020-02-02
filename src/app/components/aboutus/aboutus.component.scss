@@ -3,5 +3,30 @@
     margin: auto;
 }
 .desc{
-    text-align: center;
+    text-align: justify;
+    line-height:2.5em;
 }
+.spacing{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+.inner-div{
+    top: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@media only screen and (min-width: 993px) {
+    .row {
+      display: flex;
+    }    
+}
+
+@media only screen and (max-width: 992px) {
+    .inner-div{
+        padding-top: 40px;
+    }
+  }
+  

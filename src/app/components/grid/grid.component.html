@@ -1,9 +1,14 @@
-<div class="row ">
-    <div class="col s12 m4 l4" *ngFor="let grid of grid_data">
-        <!-- <div class="icon-block"> -->
-        <div class="center "><i class="material-icons mi">{{grid.icon}}</i></div>
-        <h5 class="center">{{grid.title}}</h5>
-        <p class="light center">{{grid.description}}</p>
-      </div>
+<h2 class="center">Our Services</h2>
+<div class="bg">
+<div *ngFor="let i of data_len">
+  <!-- <div *ngIf= "i < grid_data.length/3"> -->
+    <div class="row">
+        <div class="col s12 m4 l4 spacing" *ngFor="let grid of grids[i]; let i1=index ">
+            <div class="center "><i class="material-icons mi">{{grid.icon}}</i></div>
+            <h5 class="center">{{grid.title}}</h5>
+            <p class="light center">{{grid.description}}</p>     
+        </div>
     </div>
-<!-- </div> -->
+  <!-- </div> -->
+</div>
+</div>
