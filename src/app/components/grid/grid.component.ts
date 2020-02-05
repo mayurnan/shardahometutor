@@ -11,7 +11,7 @@ import {gridData} from '../../../shared/grid_data'
 export class GridComponent implements OnInit {
 
   grid_data : Grid[] = gridData
-  data_len= [...Array(this.grid_data.length/3).keys()]
+  data_len= [...Array(Math.ceil(this.grid_data.length/3)).keys()]
   grids = this.split(this.grid_data , 3);
 
   split(arr, subArrSize){

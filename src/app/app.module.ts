@@ -10,7 +10,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { CarouselComponent } from './components/carousel/carousel.component';
-import { GridComponent } from './components/grid/grid.component'
+import { GridComponent } from './components/grid/grid.component';
+import { TeacherRegistrationComponent } from './components/teacher-registration/teacher-registration.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { GridComponent } from './components/grid/grid.component'
     RegistrationComponent,
     NavbarComponent,
     CarouselComponent,
-    GridComponent
+    GridComponent,
+    TeacherRegistrationComponent
   ],
   imports: [
     BrowserModule,

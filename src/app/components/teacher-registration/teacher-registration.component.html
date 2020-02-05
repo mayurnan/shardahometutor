@@ -1,0 +1,95 @@
+  <!-- Contact -->
+  <section class="page-section center" id="contact">
+    <div class="container center">
+      <div>
+          <h2 class="Center">Register</h2>
+          <h5 class="light">For More Information Write us here</h5>
+      </div>
+      <div class="row "> 
+        <div class="col l12 m12 s12 xl12 center">
+            <form id="contactForm" name="sentMessage" (ngSubmit)="onSubmit()" #contactForm="ngForm" >
+                <div class="input-field"> <!-- username -->
+                    <i class="material-icons prefix">account_circle</i>
+                    <input type="text" id="username" name="username" [(ngModel)]="FormModel.username" required class="validate" >
+                    <label for="username">Your username</label>
+                    <span data-error="Enter a valid username" class="helper-text"></span>
+                </div>
+                <div class="input-field"> <!-- email -->
+                <i class="material-icons prefix">email</i>
+                <input type="email" id="email" name="email" [(ngModel)]="FormModel.email" required class="validate" >
+                <label for="email">Your Email</label>
+                <span data-error="Enter a valid Email" class="helper-text"></span>
+                </div>
+                <div class="input-field"><!--  phone number  -->
+                <i class="material-icons prefix">phone</i>
+                <input type="tel" id="phone" name="phone" maxlength="10" minlength="10" [(ngModel)]="FormModel.phone" required class="validate">
+                <label for="phone">Your Contact Number</label>
+                <span data-error="Enter a valid Phone" class="helper-text"></span>
+                </div>
+                <div class="input-field"> <!-- Enter location -->
+                  <i class="material-icons prefix">room</i>
+                  <textarea id="location" class="materialize-textarea" cols="20" rows="20" name="message" [(ngModel)]="FormModel.location" required ></textarea>
+                  <label for="location">Enter your location</label>
+                  <!-- <span data-error="Kindly add a Message" class="helper-text"></span> -->
+                </div>
+
+                <div class="input-field"> <!-- select course -->  
+                  <i class="material-icons prefix" style="float: left; position: relative;">check_box</i>
+                  <select multiple required class="validate" [(ngModel)]="FormModel.course" name="course" id="course">
+                      <!-- <option value="" disabled selected>Choose your option</option> -->
+                      <option value={{course}}  *ngFor="let course of Courses; let i = index;" >{{course.text}}</option>
+                  </select>
+                  <label for="course">Select Your course</label>                
+                  <span data-error="Kindly add a category" class="helper-text"></span>
+                </div>
+                
+                <!-- select subject -->
+                <!-- <div class="input-field">   
+                  <i class="material-icons prefix" style="float: left; position: relative;">check_box</i>
+                  <select multiple required class="validate" [(ngModel)]="FormModel.subject" *ngIf="FormModel.course" name="subject" id="subject">
+                    
+                      <optgroup  *ngFor="let SelectedCourse of Courses ; let i1= index" label="{{SelectedCourse}}">
+                        <option value={{subject}}  *ngFor="let subject of Subjects[i1].name; let i = index;" >{{subject}}</option>
+                      </optgroup>
+                  </select>
+                  <label for="subject">Select Your subject</label>                
+                  <span data-error="Kindly add a subject" class="helper-text"></span>
+                </div> -->
+
+                <div class="input-field"> <!-- Enter Std -->
+                  <i class="material-icons prefix">collections_bookmark</i>
+                  <textarea id="standard" class="materialize-textarea" cols="20" rows="20" name="message" [(ngModel)]="FormModel.std" required ></textarea>
+                  <label for="standard">Enter the Std or Year. eg. : 9th std or F.Y.J.C </label>
+                  <!-- <span data-error="Kindly add a Message" class="helper-text"></span> -->
+                </div>
+
+                <div class="input-field"> <!-- Enter Subjects -->
+                  <i class="material-icons prefix">book</i>
+                  <textarea id="subject" class="materialize-textarea" cols="20" rows="20" name="message" [(ngModel)]="FormModel.subject" required ></textarea>
+                  <label for="subject">Enter the subjects for which you wish to enrol. eg. : Science or maths or Economics</label>
+                  <!-- <span data-error="Kindly add a Message" class="helper-text"></span> -->
+                </div>
+
+                <div class="input-field"> <!-- message -->
+                  <i class="material-icons prefix">message</i>
+                  <textarea id="message" class="materialize-textarea" cols="20" rows="20" name="message" [(ngModel)]="FormModel.message" required ></textarea>
+                  <label for="message">Enter Any other Message you have</label>
+                  <!-- <span data-error="Kindly add a Message" class="helper-text"></span> -->
+                </div>
+                <div> <!--  Success Message -->
+                <h3 *ngIf='show_success' data-success='Form Submitted Successfuly' style=" color:green" >Form Submitted Successfuly</h3>
+                </div>
+                <div><!--  Error Message -->
+                <h3 *ngIf='show_error' data-error='Error in Submitting the form' style="color: red ">Error in Submitting the Form Please Try Again !</h3>
+                </div>      
+                <div class="input-field center"> <!-- submit-->
+                <button type="submit" value="submit" class="btn waves-effect" [disabled]="contactForm.invalid"> Submit</button>
+                </div>
+              </form>
+        </div>
+        <br>
+        <br>
+      </div>
+    </div>
+  </section>
+

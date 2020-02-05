@@ -33,7 +33,7 @@ ngAfterViewInit(){
       
   setInterval(function() {
     instance.next()
-  }, 4500);
+  }, 8000);
   //if not used HtMLElement than not allowed to use  click /onclick element
   // move next carousel
   let nextBtn: HTMLElement =document.querySelector('.moveNextCarousel') as HTMLElement;
