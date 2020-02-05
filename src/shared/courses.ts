@@ -3,22 +3,22 @@ import {Course} from './course';
 export const courses:Course[]=[
     {
         id: '0',
-        text: '10th Std',
+        text: 'Arts',
     },
     {
         id: '1',
-        text: '9th Std',
+        text: 'Commerce',
     },
     {
         id: '2',
-        text: '8th Std',
+        text: 'Science',
     },
     {
         id: '3',
-        text: '7th Std',
+        text: 'School',
     },
     {
         id: '4',
-        text: '6th Std',
-     }
+        text: 'others'
+    }
 ]
