@@ -22,29 +22,10 @@ export class TeacherRegistrationComponent implements OnInit {
   loader;
 
   constructor(private fb: FormBuilder) {
-    this.createForm();
   }
 
   ngOnInit() {}
 
-  createForm() {
-    this.RegistrationForm = this.fb.group({
-      username: '' ,
-      email:'',
-      phone: undefined,
-      course:[],
-      subject:[],
-      location:'', 
-      message:''
-    });
-    this.onChanges();
-  }
-
-  onChanges(){
-    this.RegistrationForm.get('course').valueChanges.subscribe(val => {
-      console.log(val);
-    })
-  }
   
   ngAfterViewInit(){
      this.instance = FormSelect.init(document.querySelectorAll('select'));  // initializing dropdown
@@ -56,9 +37,9 @@ export class TeacherRegistrationComponent implements OnInit {
       this.loader= true
 
       console.log("formModel is " , this.FormModel)
-      const result = await service.SubmitFrom(this.FormModel)
+      const result = await service.SubmitTeacherFrom(this.FormModel)
 
-      this.FormModel = {username: '' ,email:'', phone: undefined, course:[], subject:'' , location:'', std: '',message:''}
+      this.FormModel = {username: '' ,email:'', phone: undefined, course:[], subject:'' , experience:'', std: '',message:''}
       // this.responseMsg ="Form Submited Successfully"
       this.show_success=true
       this.loader= false

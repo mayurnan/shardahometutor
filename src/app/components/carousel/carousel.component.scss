@@ -18,7 +18,7 @@
     top: calc(100vw/5.4) !important;
     }
     .carousel.carousel-slider .carousel-item{
-     height: 100vh;
+     max-height: 100vh;
     }
     .carousel{
       height: 100vh !important;

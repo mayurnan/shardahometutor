@@ -11,7 +11,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { GridComponent } from './components/grid/grid.component';
-import { TeacherRegistrationComponent } from './components/teacher-registration/teacher-registration.component'
+import { TeacherRegistrationComponent } from './components/teacher-registration/teacher-registration.component';
+import { RegistrationcontrollerComponent } from './components/registrationcontroller/registrationcontroller.component'
+
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { TeacherRegistrationComponent } from './components/teacher-registration/
     NavbarComponent,
     CarouselComponent,
     GridComponent,
-    TeacherRegistrationComponent
+    TeacherRegistrationComponent,
+    RegistrationcontrollerComponent
   ],
   imports: [
     BrowserModule,
