@@ -5,7 +5,7 @@ export const gridData : Grid[] =[
         id: "1",
         title: "SSC",
         description: "leran Mathametics in the most fun and easy way",
-        icon: "signal_cellular_null"
+        icon: "library_books"
     },
     {
         id: "2",
@@ -23,30 +23,30 @@ export const gridData : Grid[] =[
         id: "4",
         title: "IB",
         description: "leran Science in a way never learned before",
-        icon: "school"
+        icon: "language"
     },
     {
         id: "5",
         title: "IGSCE",
         description: "leran History from one of the best teachers",
-        icon: "book"
+        icon: "assignment"
     },
     {
         id: "6",
         title: "Arts",
         description: "leran History from one of the best teachers",
-        icon: "book"
+        icon: "extension"
     },
     {
         id: "7",
         title: "Commerce",
         description: "leran History from one of the best teachers",
-        icon: "book"
+        icon: "description"
     },
     {
         id: "8",
         title: "Science",
         description: "leran History from one of the best teachers",
-        icon: "book"
+        icon: "account_balance"
     }
 ]
