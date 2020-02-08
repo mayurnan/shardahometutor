@@ -36,19 +36,19 @@ ngAfterViewInit(){
   }, 8000);
   //if not used HtMLElement than not allowed to use  click /onclick element
   // move next carousel
-  let nextBtn: HTMLElement =document.querySelector('.moveNextCarousel') as HTMLElement;
-  nextBtn.onclick = function(e){
-    e.preventDefault();
-    e.stopPropagation();
-    instance.next()
-  };
+  // let nextBtn: HTMLElement =document.querySelector('.moveNextCarousel') as HTMLElement;
+  // nextBtn.onclick = function(e){
+  //   e.preventDefault();
+  //   e.stopPropagation();
+  //   instance.next()
+  // };
   // move prev carousel
-  let prevBtn: HTMLElement =document.querySelector('.movePrevCarousel') as HTMLElement; 
-  prevBtn.onclick = function(e){
-    e.preventDefault();
-    e.stopPropagation();
-    instance.prev()
-  };
+  // let prevBtn: HTMLElement =document.querySelector('.movePrevCarousel') as HTMLElement; 
+  // prevBtn.onclick = function(e){
+  //   e.preventDefault();
+  //   e.stopPropagation();
+  //   instance.prev()
+  // };
 }
 }
 
