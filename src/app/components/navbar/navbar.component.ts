@@ -10,7 +10,8 @@ import {baseurl} from '../../../shared/BaseURL'
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-  baseurl=baseurl+'1g2IYW6i4Ko6ad-d-ohzFInIdADdChgH7';
+
+  logo=baseurl+'13gPS361q1KJg25e3WCpgh2CpYHntXJIQ';
   constructor() { 
   }
 
