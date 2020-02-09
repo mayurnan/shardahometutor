@@ -1,5 +1,5 @@
   <!-- Contact -->
-  <section class="page-section center" id="contact">
+  <section class="page-section center" >
     <div class="container center">
       <div>
           <h2 class="Center">Register as a Teacher</h2>
@@ -7,7 +7,7 @@
       </div>
       <div class="row "> 
         <div class="col l12 m12 s12 xl12 center">
-            <form id="contactForm" name="sentMessage" (ngSubmit)="onSubmit()" #contactForm="ngForm" >
+            <form id="contactForm1" name="sentMessage" (ngSubmit)="onSubmit()" #contactForm1="ngForm" >
                 <div class="input-field"> <!-- username -->
                     <i class="material-icons prefix">account_circle</i>
                     <input type="text" id="username" name="username" [(ngModel)]="FormModel.username" required class="validate" >
@@ -70,7 +70,7 @@
                 <h5 *ngIf='show_error' data-error='Error in Submitting the form' style="color: red ">Error in Submitting the Form Please Try Again !</h5>
                 </div>      
                 <div class="input-field center"> <!-- submit-->
-                <button type="submit" value="submit" class="btn waves-effect" [disabled]="contactForm.invalid"> Submit</button>
+                <button type="submit" value="submit" class="btn waves-effect" [disabled]="contactForm1.invalid"> Submit</button>
                 </div>
               </form>
         </div>
