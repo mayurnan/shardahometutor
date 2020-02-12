@@ -4,49 +4,49 @@ export const gridData : Grid[] =[
     {
         id: "1",
         title: "SSC",
-        description: "leran Mathametics in the most fun and easy way",
+        description: "We Teach for all subjects and standards of SSC",
         icon: "library_books"
     },
     {
         id: "2",
         title: "CBSE",
-        description: "leran Science in a way never learned before",
+        description: "We Teach for all subjects and standards of CBSE",
         icon: "school"
     },
     {
         id: "3",
         title: "ICSE",
-        description: "leran History from one of the best teachers",
+        description: "We Teach for all subjects and standards of ICSE",
         icon: "book"
     },
     {
         id: "4",
         title: "IB",
-        description: "leran Science in a way never learned before",
+        description: "We Teach for all subjects and standards of IB",
         icon: "language"
     },
     {
         id: "5",
         title: "IGSCE",
-        description: "leran History from one of the best teachers",
+        description: "We Teach for all subjects and standards of IGSCE",
         icon: "assignment"
     },
     {
         id: "6",
         title: "Arts",
-        description: "leran History from one of the best teachers",
+        description: "We Teach most of the subjects of Arts",
         icon: "extension"
     },
     {
         id: "7",
         title: "Commerce",
-        description: "leran History from one of the best teachers",
+        description: "We Teach most of the subjects of Commerce",
         icon: "description"
     },
     {
         id: "8",
         title: "Science",
-        description: "leran History from one of the best teachers",
+        description: "We Teach most of the subjects of Science",
         icon: "account_balance"
     }
 ]
