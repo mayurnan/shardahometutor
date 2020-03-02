@@ -19,7 +19,7 @@ export class RegistrationComponent implements OnInit {
   show_success:Boolean=false;
   show_error:Boolean=false;
   RegistrationForm: FormGroup;
-  loader;
+  loader= false;
 
   constructor(private fb: FormBuilder) {
     this.createForm();
@@ -55,7 +55,6 @@ export class RegistrationComponent implements OnInit {
       var index=0;
       this.loader= true
 
-      console.log("formModel is " , this.FormModel)
       const result = await service.SubmitFrom(this.FormModel)
 
       this.FormModel = {username: '' ,email:'', phone: undefined, course:[], subject:'' , location:'', std: '',message:''}
@@ -64,13 +63,13 @@ export class RegistrationComponent implements OnInit {
       this.loader= false
     }
     catch(error){
-      console.log(error)
       this.loader= false
       // this.FormModel = {username: '' ,email:'', phone: undefined, course:[], subject:'' , location:'', std:'', message:''}
       this.show_error=true
     }
     setTimeout(()=>
     {
+      this.loader= false
       this.show_success=false;
       this.show_error=false;
     },5000)
