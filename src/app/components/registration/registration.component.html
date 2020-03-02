@@ -37,7 +37,7 @@
                   <i class="material-icons prefix" style="float: left; position: relative;">check_box</i>
                   <select multiple required class="validate" [(ngModel)]="FormModel.course" name="course" id="course">
                       <!-- <option value="" disabled selected>Choose your option</option> -->
-                      <option value={{course}}  *ngFor="let course of Courses; let i = index;" >{{course.text}}</option>
+                      <option value={{course.text}}  *ngFor="let course of Courses; let i = index;" >{{course.text}}</option>
                   </select>
                   <label for="course">Select Your course</label>                
                   <span data-error="Kindly add a category" class="helper-text"></span>
