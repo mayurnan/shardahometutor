@@ -36,9 +36,9 @@ export class TeacherRegistrationComponent implements OnInit {
       var index=0;
       this.loader= true
 
-      // const result = await service.SubmitTeacherFrom(this.FormModel)
+      const result = await service.SubmitTeacherFrom(this.FormModel)
 
-      // this.FormModel = {username: '' ,email:'', phone: undefined, course:[], subject:'' , experience:'', std: '',message:''}
+      this.FormModel = {username: '' ,email:'', phone: undefined, course:[], subject:'' , experience:'', std: '',message:''}
       // this.responseMsg ="Form Submited Successfully"
         this.show_success=true
         this.loader= false
