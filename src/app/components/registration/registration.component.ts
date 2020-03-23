@@ -59,7 +59,7 @@ export class RegistrationComponent implements OnInit {
 
       this.FormModel = {username: '' ,email:'', phone: undefined, course:[], subject:'' , location:'', std: '',message:''}
       // this.responseMsg ="Form Submited Successfully"
-      this.show_success=true
+      // this.show_success=true
       this.loader= false
     }
     catch(error){
@@ -70,7 +70,7 @@ export class RegistrationComponent implements OnInit {
     setTimeout(()=>
     {
       this.loader= false
-      this.show_success=false;
+      this.show_success=true;
       this.show_error=false;
     },5000)
 

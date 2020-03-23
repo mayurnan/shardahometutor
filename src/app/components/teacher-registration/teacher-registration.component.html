@@ -69,8 +69,22 @@
                 <div><!--  Error Message -->
                 <h5 *ngIf='show_error' data-error='Error in Submitting the form' style="color: red ">Error in Submitting the Form Please Try Again !</h5>
                 </div>      
+
+                <div class="preloader-wrapper small active" *ngIf="loader">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div><div class="gap-patch">
+                      <div class="circle"></div>
+                    </div><div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+
+
                 <div class="input-field center"> <!-- submit-->
-                <button type="submit" value="submit" class="btn waves-effect" [disabled]="contactForm1.invalid"> Submit</button>
+                <button type="submit" value="submit" class="btn waves-effect" [disabled]="contactForm1.invalid || loader"> Submit</button>
                 </div>
               </form>
         </div>
