@@ -36,13 +36,12 @@ export class TeacherRegistrationComponent implements OnInit {
       var index=0;
       this.loader= true
 
-      console.log("formModel is " , this.FormModel)
-      const result = await service.SubmitTeacherFrom(this.FormModel)
+      // const result = await service.SubmitTeacherFrom(this.FormModel)
 
-      this.FormModel = {username: '' ,email:'', phone: undefined, course:[], subject:'' , experience:'', std: '',message:''}
+      // this.FormModel = {username: '' ,email:'', phone: undefined, course:[], subject:'' , experience:'', std: '',message:''}
       // this.responseMsg ="Form Submited Successfully"
-      this.show_success=true
-      this.loader= false
+        this.show_success=true
+        this.loader= false
     }
     catch(error){
       console.log(error)
@@ -52,6 +51,7 @@ export class TeacherRegistrationComponent implements OnInit {
     }
     setTimeout(()=>
     {
+      this.loader= false
       this.show_success=false;
       this.show_error=false;
     },5000)
